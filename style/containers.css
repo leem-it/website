@@ -34,3 +34,10 @@
 		flex-direction: column;
 	}
 }
+
+@media screen and (max-width: 440px) {
+	.form {
+		flex-direction: column;
+		margin: 6rem 5% 0 5%;
+	}
+}
