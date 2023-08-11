@@ -12,8 +12,9 @@ function registerMail() {
 	const email = document.getElementById('email').value;
 	if (!validateEmail(email)) {
 		document.getElementById('error').classList.remove('hidden');
+		return;
 	}
-
+	document.getElementById('submit').innerHTML = 'loading...';
 	fetch(`https://api.leem.it/v0/register?email=${email}`).then((res) => {
 		document.getElementById('error').classList.add('hidden');
 		document.getElementById('form').classList.add('hidden');

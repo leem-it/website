@@ -21,6 +21,11 @@
 	margin-right: 10%;
 }
 
+#submit:hover {
+	background-color: #606060;
+	box-shadow: 3px 3px 5px #1a1a1a;
+}
+
 #error {
 	color: #da564a;
 	text-align: center;
