@@ -1,0 +1,36 @@
+.title {
+	width: 100%;
+	margin-top: 8rem;
+	text-align: center;
+}
+
+.form {
+	margin-top: 6rem;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	background-color: #2b2b2b;
+	border: 2px solid #4a4a4a;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.features {
+	margin-top: 25rem;
+	padding-bottom: 10rem;
+}
+
+.bottom {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+	.bottom {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leemit | A powerful time tracker</title>
+    <meta property="og:title" content="Leemit" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="A powerful time tracker" />
+    <meta property="og:description" content="A powerful time tracker" />
+    <link rel="canonical" href="https://leem.it/" />
+    <meta property="og:url" content="https://leem.it/" />
+    <meta property="og:site_name" content="Leemit" />
+    <meta property="og:image" content="https://leem.it/images/site-preview.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/containers.css">
+    <link rel="stylesheet" href="style/elements.css">
+
+    <script src="leader-line/leader-line.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload='init()' onresize='resize()'>
+    <div class='title'>
+        <h1>Leemit</h1>
+        <h2>A powerful tracker to challenge time.</h2>
+    </div>
+    <div id='form' class='form'>
+        <input id="email" name='email' type="text" maxlength="256" placeholder="join the beta waitlist">
+        <button id="submit" onclick='registerMail()'>join us</button>
+    </div>
+    <div id='success' class='form hidden'>
+        <p class='container'>Thanks for signing up!</p>
+    </div>
+    <div id='error' class='hidden'>
+        <p>This email is invalid. Make sure it's written like example@email.com</p>
+    </div>
+
+    <div class='features'>
+        <div class='top' id='time-tracking'>
+            <h3>TIME TRACKING.</h3>
+            <p>Leemit tracks your activities, organizes the data and gives you useful statistics.</p>
+        </div>
+        <div class='bottom'>
+            <div class='bottom-left' id='students-freelancers'>
+                <h3>STUDENTS AND FREELANCER.</h3>
+                <p>Leemit is thought for everyone who wants to optimize performances using time tracking.</p>
+            </div>
+            <div style='width: 20%; display: flex; justify-content: center;'>
+                <img src="images/logo-plain-lines.png" loading="lazy" alt="leemit logo" id='center-image'>
+            </div>
+            <div class='bottom-right' id='days'>
+                <h3>YESTERDAY, TODAY, TOMORROW.</h3>
+                <p>Leemit can be syncronized with Google Calendar. See what you did, what you're doing, what you have to
+                    do.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
